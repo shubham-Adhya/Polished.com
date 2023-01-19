@@ -27,7 +27,9 @@ document.addEventListener("click", (e)=>{
         dropdown.classList.remove('active')
     })
 })
-
+function hrefFunction(){
+    window.location.href="./signINPage.html"
+}
 
 
 
