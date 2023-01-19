@@ -30,7 +30,18 @@ document.addEventListener("click", (e)=>{
 function hrefFunction(){
     window.location.href="./signINPage.html"
 }
+function hrefFunctionHome(){
+    window.location.href="./index.html"
+}
 
+let counter=1;
+setInterval(()=>{
+    document.getElementById("radio"+counter).checked=true;
+    counter++;
+    if(counter>4){
+        counter=1
+    }
+},4000)
 
 
     
