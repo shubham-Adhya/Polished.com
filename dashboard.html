@@ -8,6 +8,12 @@
     <link rel="icon" href="./img/polished logo.jpg" type="image/icon">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="commonstyle.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
     <!-- <div id="preloader"></div>                    -->
@@ -397,11 +403,36 @@
        </div>
     </div>
     
+    <div id="main">
+        <div class="left">
+            <button onclick="hrefFunction1()">My Profile</button>
+            <button onclick="hrefFunction2()">Cart</button>
+            <button onclick="hrefFunction3()">My Orders</button>
+            <button onclick="hrefFunction4()">Log Out</button>
+        </div>
+        <div class="right">
+            <div>
+                <h4>Email: <span>shubhamadhya@gmail.com</span></h4>
+                <h4>Mobile: <span>xxxxxx2143</span></h4>
+                <h4>Date of Birth: <span>dd/mm/yyyy</span></h4>
+            </div>
+            <div>
+                <h3>MY ADDRESSES</h3>
+                <div>
+                    <img src="./icons/write-svgrepo-com.svg" alt="">
+                    <p>ADD NEW ADDRESS</p>
+                </div>
+            </div>
+            <div>
+                <h4>18,RNC Road ,Subhasgram <br>Kolkata-700147</h4>
+            </div>
 
+        </div>
+    </div>
 
 
     
-    <!-- <img src="./img/polished logo.jpg" alt=""> -->
+    
 
 
 
@@ -540,3 +571,4 @@
 </body>
 </html>
 <script src="./scripts/common-script.js"></script>
+<script src="./scripts/dashboard.js"></script>

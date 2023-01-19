@@ -1,0 +1,77 @@
+body{
+    background-color: whitesmoke;
+}
+#main{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 70%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#main button{
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: white;
+    border: none;
+    border-bottom: 4px solid #fc2779;
+    margin-bottom: 30px;
+    border-radius: 7px;
+    box-shadow: rgba(138, 137, 137, 0.16) 0px 3px 6px, rgba(164, 163, 163, 0.23) 0px 3px 6px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 17%;
+    
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    /* border: 1px solid red; */
+    flex-wrap: wrap;
+    width: 70%;
+    box-shadow: rgba(138, 137, 137, 0.16) 0px 3px 6px, rgba(164, 163, 163, 0.23) 0px 3px 6px;
+}
+.right *{
+    background: white;
+}
+.right>*{
+    margin:25px;
+}
+.right>div{
+    display: flex;
+    /* width: 100%; */
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+.right>div>div{
+    display: flex;
+    /* border: 1px solid red; */
+    align-items: center;
+    
+}
+.right img{
+    width: 30px;
+    
+}
+.right>div:nth-child(1){
+    flex-direction: column;
+}
+.right>div:nth-child(1) *{
+    margin: 0;
+}
+.right>div:nth-child(3){
+    
+    height: 150px;
+    box-shadow: rgba(138, 137, 137, 0.16) 0px 3px 6px, rgba(164, 163, 163, 0.23) 0px 3px 6px; 
+}
+.right>div:nth-child(3) *{
+    margin: 25px;
+}
+
