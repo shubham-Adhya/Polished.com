@@ -1,0 +1,263 @@
+/* body{
+    margin: 0;
+    padding: 0;
+} */
+#preloader{
+    background: white url(./gif/polished\ loader.gif) no-repeat center;
+    background-size: 40%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+.flash1{
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 90%;
+}
+.flash1>img{
+    width: 100%;
+}
+.flash2{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.flash2 img{
+    width: 49%;
+}
+
+
+.card-1{
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.card-1 h5{
+    color:#fc2779;
+    font-size: 17px;
+    margin: 0;
+}
+.card-1 p{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.card-1 h5,p{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.grid-1{
+    display: grid;
+    /* border: 1px solid red; */
+    grid-template-columns: repeat(3, max-content);
+    gap: 25px;
+    margin-bottom: 30px;
+}
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 25px;
+    margin-bottom: 30px;
+}
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(5, max-content);
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+.image-sliding{
+    margin:auto;
+    width: 90%;
+}
+.image-sliding img{
+    width: 100%;
+}
+
+.slider{
+    /* width: 800px; */
+    overflow: hidden;
+}
+.slides{
+    width: 500%;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 1s;
+}
+
+.navigation-manual{
+    /* border: 1px solid red; */
+    position: absolute;
+    width: 1367px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #fc2779;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background: #fc2779;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 1367px;
+    justify-content: center;
+    margin-top: 215px;
+}
+
+.navigation-auto div{
+    border: 2px solid #fc2779;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #fc2779;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #fc2779;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #fc2779;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #fc2779;
+}
+
+
+body{
+    background-color: whitesmoke;
+}
+#main{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 90%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#main>div:nth-child(1)> button{
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: white;
+    border: none;
+    border-bottom: 4px solid #fc2779;
+    margin-bottom: 30px;
+    border-radius: 7px;
+    box-shadow: rgba(138, 137, 137, 0.16) 0px 3px 6px, rgba(164, 163, 163, 0.23) 0px 3px 6px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 17%;
+    position: sticky;
+}
+.right{
+    /* display: grid; */
+    /* grid-template-columns: repeat(3,max-content) ; */
+    /* background: white; */
+    /* justify-content: center; */
+    
+    /* border: 1px solid red; */
+    width: 80%;
+    /* box-shadow: rgba(138, 137, 137, 0.16) 0px 3px 6px, rgba(164, 163, 163, 0.23) 0px 3px 6px; */
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    justify-content: space-around;
+    text-align: center;
+}
+.card button{
+    width: 80%;
+}
+.card>div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card>div{
+    opacity: 0;
+}
+.card>div:hover{
+    opacity: 1;
+}
+.addToCartBtn{
+    border: none;
+    background: #fc2779;
+    color: white;
+    font-size: 19px;
+    cursor: pointer;
+}
+.card>h4{
+    font-size: larger;
+}
+.card>p{
+    font-size: 19px;
+    font-weight: 800;
+}
+
+
