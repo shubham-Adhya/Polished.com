@@ -10,3 +10,7 @@ function hrefFunction3(){
 function hrefFunction4(){
     window.location.href="./index.html"
 }
+function hrefFunction0(){
+    window.location.href="./index.html"
+}
+

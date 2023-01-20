@@ -44,4 +44,13 @@ setInterval(()=>{
 },4000)
 
 
+
+
+let searchbox=document.getElementById("searchform")
+
+searchbox.addEventListener("submit",(e)=>{
+    window.location.href="./product.html"
+})
+
+
     
