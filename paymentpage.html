@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+</head>
+<body>
+    <div>
+        <form  id="discount" action="">
+            <h3>Cart MRP: ₹<span id="order-total"></span></h3>
+            <label for="discount">Coupons & Offers</label>
+            <input type="text" type="submit" placeholder="Your Coupon Code" id="couponInp">
+            <p>Bag Discount: -₹60</p>
+            <p>Shipping: ₹70</p>
+            <h2>You Pay: ₹<span id="youpay"></span></h2>
+        </form>
+
+        <form action="" id="pay">
+            <button type="submit">Pay Now</button>
+        </form>
+    </div>
+</body>
+</html>
+
+<script src="./scripts/paymentpage.js"></script>
