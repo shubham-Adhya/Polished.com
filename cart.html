@@ -8,7 +8,7 @@
     <link rel="icon" href="./img/polished logo.jpg" type="image/icon">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="commonstyle.css">
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="cart.css">
     <style>
         html{
             scroll-behavior: smooth;
@@ -57,11 +57,11 @@
             <a href="">Beauty Advice</a>
         </div>
         <div class="box1">
-            <form onsubmit="event.preventDefault();" role="search" class="searchbox">
+            <form  role="search" class="searchbox" id="searchform">
                 <input id="search" type="search" placeholder="Search on Polished"/> 
             </form>
             <button class="button-64" role="button" onclick="hrefFunction()"><span class="text">Welcome</span></button>
-            <a href="">
+            <a href="./cart.html">
                 <img src="https://img.icons8.com/pastel-glyph/64/null/shopping-bag--v4.png"/>
             </a>   
         </div>
@@ -411,7 +411,14 @@
             <button onclick="hrefFunction4()">Log Out</button>
         </div>
         <div class="right">
-            
+            <div>
+                <h2>Your Total Cart Value is: ₹<span id="order-total">0</span></h2>
+                <button id="checkout">CheckOut</button>
+            </div>
+            <div class="grid">
+                
+
+            </div>
 
         </div>
     </div>
@@ -559,3 +566,4 @@
 <script src="./scripts/common-script.js"></script>
 <script src="./scripts/dashboard.js"></script>
 <script src="./scripts/cart.js"></script>
+<script src="./scripts/paymentpage.js"></script>

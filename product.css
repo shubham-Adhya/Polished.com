@@ -261,3 +261,66 @@ body{
 }
 
 
+#filter{
+    /* border: 1px solid red; */
+    margin-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
+
+#filter input{
+    /* border: 1px solid red; */
+    margin-bottom: 10px;
+    display: block;
+    padding-left: 10px;
+    width: 80%;
+    height: 50px;
+    background: white;
+    border: none;
+    border-radius: 7px;
+    box-shadow: rgba(138, 137, 137, 0.16) 0px 3px 6px, rgba(164, 163, 163, 0.23) 0px 3px 6px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+}
+#filter button{
+    display: block;
+    
+    height: 50px;
+    background: white;
+    border: none;
+    border-bottom: 4px solid #fc2779;
+    width: 80%;
+    border-radius: 7px;
+    box-shadow: rgba(138, 137, 137, 0.16) 0px 3px 6px, rgba(164, 163, 163, 0.23) 0px 3px 6px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 0px 10px ;
+}
+
+
+#filter label, #sort label{
+    font-size: 17px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+#sort{
+    display: block;
+    
+    height: 50px;
+    background: white;
+    border: none;
+    border-bottom: 4px solid #fc2779;
+    
+    border-radius: 7px;
+    box-shadow: rgba(138, 137, 137, 0.16) 0px 3px 6px, rgba(164, 163, 163, 0.23) 0px 3px 6px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 0px 0px ;
+}
