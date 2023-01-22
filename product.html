@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kajal | Polished</title>
+    <title>Polished</title>
     <link rel="icon" href="./img/polished logo.jpg" type="image/icon">
     <!-- <link rel="stylesheet" href="index.css"> -->
     <link rel="stylesheet" href="commonstyle.css">
@@ -61,7 +61,7 @@
             <form role="search" class="searchbox" id="searchform">
                 <input id="search" type="search" placeholder="Search on Polished"/> 
             </form>
-            <button class="button-64" role="button" onclick="hrefFunction()"><span class="text">Sign In</span></button>
+            <button class="button-64" role="button" onclick="hrefFunction()"><span class="text">Welcome</span></button>
             <a href="./dashboard.html">
                 <img src="https://img.icons8.com/pastel-glyph/64/null/shopping-bag--v4.png"/>
             </a>   
@@ -406,7 +406,7 @@
     
 
     <section class="image-sliding">
-        <h2 style="text-align: center;">Eye Kajal Online Shopping</h2>
+        <h2 style="text-align: center;"></h2>
         <div class="slider">
             <div class="slides">
                 <input type="radio" name="radio-btn" id="radio1">
@@ -448,10 +448,22 @@
     
     <div id="main">
         <div class="left">
-            <button onclick="">My Profile</button>
-            <button onclick="">Cart</button>
+            <button onclick="hrefFunction1()">My Profile</button>
+            <!-- <button onclick="">Cart</button>
             <button onclick="">My Orders</button>
-            <button onclick="">Log Out</button>
+            <button onclick="">Log Out</button> -->
+            <div id="filter">
+                <label>Filter By Price Range</label>
+                <input type="number" id="lower" placeholder="From"/>
+                <input type="number" id="upper" placeholder="To"/> <br>
+                <button id="filter-btn">Filter</button>
+            </div>
+            <select id="sort">
+                <label for="">Sort By Price</label>
+                <option value="">Sort By Price</option>
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
+            </select>
         </div>
         
         <div class="right">

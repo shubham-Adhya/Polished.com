@@ -75,10 +75,55 @@
 //         img: './product-img/15.avif'
 //     },
 // ]
+function hrefFunction1(){
+  window.location.href="./dashboard.html"
+}
 
+
+
+
+
+
+
+
+
+
+
+    
 let gridEl=document.querySelector(".grid")
 let buyLS=JSON.parse(localStorage.getItem("buy")) || [];
 let searchResult2=JSON.parse(localStorage.getItem('searchresult')) || []
+let filtered=[]
+
+
+
+
+let filterBtn=document.getElementById("filter-btn")
+let lower=document.getElementById("lower")
+let upper=document.getElementById("upper")
+filterBtn.addEventListener("click",()=>{
+      filtered=searchResult2.filter((el)=>{
+        if(el.mrp>=Number(lower.value) && el.mrp<=Number(upper.value)){
+          return true
+        }else{
+          return false
+        }
+      })
+      display(filtered)
+})
+
+let sort=document.getElementById("sort")
+sort.addEventListener("change",()=>{
+      if(sort.value==""){
+        display(filtered)
+      }else if(sort.value==='asc'){
+        let sorted=filtered.sort((a,b)=>(a.mrp-b.mrp))
+        display(sorted)
+      }else if(sort.value==='desc'){
+        let sorted=filtered.sort((a,b)=>(b.mrp-a.mrp))
+        display(sorted)
+      }
+})
 
 display(searchResult2);
 function display(data){

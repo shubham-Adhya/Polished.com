@@ -1,2 +1,86 @@
-/* payment css pending
-filter sort pending and their css  */
+body{
+    margin: 0;
+    padding: 0;
+    background: whitesmoke;
+}
+div{
+    /* border: 1px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    display: block;
+    width: 20vw;
+    margin: auto;
+    margin-top: 150px;
+    padding: 60px;
+    border-radius: 15px;
+    background: white;
+}
+button{
+    display: block;
+    width: 100%;
+    height: 53px;
+    /* background-color: #fc2779; */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 19px;
+    line-height: 26px;
+    color: black;
+    box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.25);
+    border-radius: 32px;
+    border: 3px solid #fc2779;
+    background: none;
+    position: relative;
+}
+.btn-5{
+    overflow: hidden;
+}
+.btn-5::after{
+    height: 100%;
+    left: -35%;
+    top: 0;
+    transform: skew(50deg);
+    transition-duration: 0.6s;
+    transform-origin: top left;
+    width: 0;
+    
+}
+.btn-5:hover:after{
+    height: 100%;
+    width: 135%;
+    
+}
+
+button,
+button::after{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: 1;
+}
+button::after,button::before{
+    background: #fc2779;
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+button:hover{
+    color: white;
+}
+
+input{
+    /* border: 1px solid red; */
+    margin-bottom: 10px;
+    display: block;
+    padding-left: 10px;
+    width: 80%;
+    height: 50px;
+    background: white;
+    border: none;
+    border-radius: 7px;
+    box-shadow: rgba(138, 137, 137, 0.16) 0px 3px 6px, rgba(164, 163, 163, 0.23) 0px 3px 6px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+}

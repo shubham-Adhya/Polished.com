@@ -21,7 +21,7 @@ let ordertotalLS=JSON.parse(localStorage.getItem("ordertotal")) || '';
     discount.addEventListener("submit",(e)=>{
         e.preventDefault();
         if(flag==true){
-            if(discount.couponInp.value=='Masai30'){
+            if(discount.couponInp.value=='Polished30'){
             youpay.innerText=Math.floor(0.7*(Number(ordertotalLS)+10))
             
             }
