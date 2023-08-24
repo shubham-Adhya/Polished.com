@@ -2,6 +2,7 @@
 
 Welcome to Polished.com, your go-to destination for all things beauty and lifestyle. We're thrilled to offer you a wide range of beauty products, daily essentials, and more, all available for convenient online shopping. Our website's design is inspired by the renowned [Nykaa](https://www.nykaa.com/) platform, ensuring a user-friendly and visually appealing shopping experience.
 
+Live Link: https://zesty-quokka-d67a28.netlify.app/
 
 ![polished logo](https://github.com/shubham-Adhya/Polished.com/assets/119453418/e598cf9d-14a0-4bf9-b297-1c4364f13a65)
 
